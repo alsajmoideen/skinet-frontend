@@ -1,0 +1,165 @@
+:root {
+    --inputBg: #fefec7f6;
+    --inputTextColor: #02254C;
+    --blackDim: #0e0e0ed9;
+    --yellowShade: #fbdf2df4;
+    --hoverColor: #daf703f7;
+}
+
+.yellowShadeBg {
+    background-color: #f5ff30;
+
+}
+
+.containerProfileSkeleton {
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+    background-color: var(--blackDim);
+
+}
+
+.profilePicSecSkeleton {
+    position: relative;
+    height: 25%;
+}
+
+.profileWelcomeSkeleton {
+    position: absolute;
+    display: none;
+}
+
+.profilePicSkeleton {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    left: 7.5rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    background-color: #94948e;
+    border-radius: 10px;
+}
+
+.skeletonAnime{
+    animation: skeleton 3s linear  infinite;
+}
+.picInfo {
+    position: absolute;
+    top: 9.5rem;
+    left: 6.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #faedb1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.userProfileInputSkeleton {
+    animation: skeleton 3s linear  infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+}
+
+.userProfileTextareaSkeleton {
+    animation: skeleton 3s linear  infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+}
+
+.textAreaLimitMsgSkeleton {
+    animation: skeleton 3s linear  infinite;
+    font-size: 1.4rem;
+    color: var(--inputBg);
+    margin-bottom: 2rem;
+}
+
+@keyframes skeleton {
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .4;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .containerProfileSkeleton {
+        display: flex;
+    }
+
+    .profileWelcomeSkeleton {
+        top: .5rem;
+        left: 2rem;
+        display: block;
+        color: var(--inputBg);
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .profileYouHgSkeleton {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--yellowShade);
+        text-decoration: underline;
+    }
+
+    .profilePicSecSkeleton {
+        width: 50%;
+    }
+
+    .profilePicSkeleton {
+        top: 9rem;
+        left: 9rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .picInfoSkeleton {
+        top: 6rem;
+        left: 9rem;
+    }
+
+    .messageDisplayProfile {
+        font-size: 2.2rem;
+        top: 2.5rem;
+        left: -15rem;
+    }
+
+    .editProfile {
+        top: 2rem;
+        left: 3rem;
+        width: 5rem;
+        height: 5rem;
+        opacity: .6;
+    }
+
+    .formSec {
+        margin-top: 1.5rem;
+    }
+}

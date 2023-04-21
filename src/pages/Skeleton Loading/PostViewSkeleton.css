@@ -1,0 +1,84 @@
+.containerViewSkeleton{
+    width: 100%;
+    min-height: 85vh;
+    background-color: #2b2b2bf5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    align-items: center;
+}
+.containerPostViewSkeleton:last-child{
+    padding-bottom: 2rem;
+}
+.titlePostViewSkeleton{
+    width: 85%;
+    height: 11vh;
+    background-color: #2e2e2ed9;
+    border-radius: 10px;
+    text-align: center;
+    border: 4px solid #fff;
+    margin-bottom: 2rem;
+    animation: postView 2s linear  infinite  ;
+}
+.titlePostViewSkeleton:nth-child(1){animation-delay: 0.0s;}
+.titlePostViewSkeleton:nth-child(2){animation-delay: 0.2s;}
+.titlePostViewSkeleton:nth-child(3){animation-delay: 0.4s;}
+.titlePostViewSkeleton:nth-child(4){animation-delay: 0.5s;}
+.topTitleView{
+    width: 100%;
+    height: 6vh;
+    border-bottom: 2px solid ;
+    background-color: aliceblue;
+    border-radius:0 0 10px 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.bottomTitleView{
+    width: 100%;
+    height: 5vh;
+    color: #fbdf2df4;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.descriptionPostViewSkeleton{
+    width: 85%;
+    height: 20vh;
+    background-color: #2e2e2ed9;
+    border-radius: 10px;
+    border: 4px solid #fff;
+    margin-bottom: 1rem;
+    animation: postView 2s linear  infinite  ;
+}
+.topDescriptionView{
+    width: 100%;
+    height: 6vh;
+    border-bottom: 2px solid ;
+    background-color: aliceblue;
+    border-radius:0 0 10px 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.bottomDescriptionView{
+    width: 100%;
+    height: 14vh;
+    color: #fbdf2df4;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+    
+}
+.dummieview{
+    width: 50%;
+    height: 3.5vh;
+    margin-left: 1rem;
+    border-radius: 20px;
+    margin-top: .3rem;
+    background-color: #fff;
+}
+
+@keyframes postView {
+    0%{opacity: .5;}
+    100%{opacity: 0;}
+}

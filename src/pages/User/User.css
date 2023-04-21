@@ -1,0 +1,88 @@
+.containerUser {
+    position: relative;
+    width: 100%;
+    height: 115vh;
+    overflow: hidden;
+    background-color: var(--blackDim);
+}
+.logoutBtnAlignUser{
+    text-align: center;
+    padding-top: .1rem;
+}
+
+.logoutColorUser{
+    background-color: #e32525;
+}
+.logoutColorUser:hover{
+    cursor: pointer;
+    background-color: #f82f2f;
+}
+.messageDisplayUser{
+    text-align: center;
+    color: #37cb12;
+    height: 1.8rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 10.5rem;
+}
+.modalLogout {
+    position: relative;
+    top: -.5rem;
+    width: 22rem;
+    height: 15rem;
+    font-size: 1.2rem;
+    margin-left: .1rem;
+    border-radius: 20px;
+    background-color: #8f8f82fc;
+}
+
+.modalLogout>.header {
+    width: 95%;
+    /* border-bottom: 1px solid gray; */
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #faedeb;
+    text-align: center;
+    padding: 5px;
+}
+
+.modalLogout>.content {
+    width: 100%;
+    padding-left: 3rem;
+}
+.modalLogout>.actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.modalLogout>.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -.1rem;
+    top: -.3rem;
+    font-size: 24px;
+    background: #bd200b;
+    border-radius: 18px;
+    border: 1px solid #141414;
+}
+@media only screen and (min-width: 900px) {
+    .containerUser{
+        display: flex;
+        height: 120vh;
+    }
+    .messageDisplayUser{
+        font-size: 2.2rem;
+        top: 2.5rem;
+        left: -15rem;
+    }
+
+}

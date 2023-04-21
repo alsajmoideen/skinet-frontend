@@ -1,0 +1,116 @@
+:root {
+    --blackDim: #000000f0;
+    --yellowShade: #fbdf2df4;
+    --hoverColor: #daf703f7;
+}
+
+.creamLogin {
+    color: var(--yellowShade);
+}
+
+.creamBgLogin {
+    background-color: var(--yellowShade);
+}
+
+.pointerAuth {
+    cursor: pointer;
+}
+
+.registerLink {
+    cursor: pointer;
+    width: 11rem;
+    height: 3rem;
+    margin-left: 4rem;
+}
+
+.spanFontStyle {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.pointerAuth:hover {
+    color: var(--hoverColor);
+}
+
+.containerLogin {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--blackDim);
+    color: #ffffff;
+}
+
+.imgWrapperLogin {
+    position: absolute;
+    top: 1rem;
+    right: -3rem;
+    width: 15rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.logoImgLogin {
+    transform: rotate(6deg);
+}
+
+.intoLogin {
+    padding-left: .5rem;
+}
+
+.lgLogin {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.lgMdLogin {
+    position: relative;
+    z-index: 1;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.mdLogin {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.smLogin {
+    font-size: 1.3rem;
+    margin-left: .8rem;
+    letter-spacing: 1px;
+}
+
+.midLogin {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:900px) {
+    .containerLogin {
+        height: 100vh;
+        display: flex;
+        overflow: hidden
+    }
+
+    .destopPart1Login {
+        width: 50%;
+    }
+
+    .destopPart2Login {
+        position: relative;
+        top: 5rem;
+        left: -5rem;
+        z-index: 1;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .containerLogin {
+        height: 100vh;
+    }
+}

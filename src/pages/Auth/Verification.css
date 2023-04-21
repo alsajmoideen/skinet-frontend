@@ -1,0 +1,105 @@
+:root {
+    --blackDim: #000000f0;
+    --yellowShade: #fbdf2df4;
+    --hoverColor: #daf703f7;
+}
+
+.creamVerify {
+    color: var(--yellowShade);
+}
+
+.creamBgVerify {
+    background-color: var(--yellowShade);
+}
+
+.containerVerify {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blackDim);
+    overflow: hidden;
+    color: #f8f8f8;
+}
+
+.verifyLogoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.emailVerify {
+    width: 12rem;
+    height: 12rem;
+    color: var(--yellowShade);
+}
+
+.verifyInfo {
+    text-align: center;
+}
+
+.lgVerify {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.mdVerify {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.formGmailLen {
+    text-align: center;
+    margin-left: 4rem;
+    word-wrap: break-word;
+    max-width: 15rem;
+    height: 5rem;
+}
+
+.smVerify {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.verifyTickMark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    font-size: 9rem;
+    color: #38bd43f7;
+}
+
+@media only screen and (max-width:414px) {
+    .containerVerify {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .containerVerify {
+        display: flex;
+    }
+
+    .verifyDesktopPart1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .verifyDesktopPart2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+}

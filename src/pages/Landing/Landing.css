@@ -1,0 +1,295 @@
+.containerLanding {
+    width: 100%;
+    height: 250vh;
+}
+.bannerLanding {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background: #000000ed;
+    color: #fff;
+
+}
+
+.banner_topLanding {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 12vh;
+}
+
+.logoLanding {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #f2c14e;
+    font-size: 2rem;
+}
+
+.LoginBtnLanding {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f2c14e;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    padding: 1px 20px;
+    box-shadow: 1px .5px 1px #f2c14e;
+    letter-spacing: 1.1px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.LoginBtnLanding:hover {
+    background-color: #fff;
+    color: #edc464;
+}
+
+.banner_bottomLanding {
+    text-align: center;
+    width: 100%;
+    height: 75%;
+    padding-top: 3rem;
+}
+
+.lg_1Landing {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #f2c14e;
+}
+
+.lg_1_1Landing {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f2c14e;
+    margin-bottom: 1rem;
+}
+
+.lg_1_2Landing {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0A0907;
+}
+
+.lg_2Landing {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.lg_3Landing {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+@keyframes example {
+    0% {
+        opacity: 2;
+    }
+
+    25% {
+        opacity: 5;
+        color: #756213;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 5;
+        color: #f2c14e;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.downIconLanding {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    color: #edc464;
+    animation: example 1.2s ease-in infinite;
+}
+
+.servicesLanding {
+    position: relative;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f6eef1;
+}
+
+.pointRLanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 95%;
+    height: 15vh;
+    background-color: #edc464;
+    border-radius: 40px 0 0 40px;
+
+}
+
+.pointLLanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 15vh;
+    background-color: #F9F6EE;
+}
+
+.pInfoLanding {
+    max-width: 80%;
+    height: 18vh;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: #252525ec;
+}
+
+.visionLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    background-color: #ffd062ef;
+    color: #02254C;
+}
+
+.vInfoLanding{
+    max-width: 80%;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.footerLanding{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.pLg_1Landing{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f2c14e;
+}
+.pLg_2Landing{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.pLg_3Landing{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.pLg_4Landing{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.pLgFoLanding{
+    text-align: center;
+}
+
+@media only screen and (max-width: 414px) {
+    .bannerLanding {
+        width: 100%;
+        height: 100vh;
+        background: #000000e1;
+        color: #fffffffb;
+        border-radius: 0;
+    }
+    
+    .bannerTopScrollLanding{
+        transition: .3s;
+        position: fixed;
+        background: #000000f5;
+        z-index: 1;
+    }
+
+    .banner_bottomLanding {
+        margin-top: 1rem;
+    }
+
+    .logoLanding {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 3rem;
+    }
+
+    .LoginBtnLanding {
+        position: absolute;
+        top: 28px;
+        right: 15px;
+        font-size: 1.7rem;
+    }
+
+
+    .lg_1Landing {
+        font-size: 4rem;
+        font-weight: 900;
+        color: #f2c14e;
+        margin-bottom: .5rem;
+    }
+
+    .lg_2Landing {
+        font-size: 2.7rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .lg_3Landing {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    .downIconLanding {
+        margin-top: 5.3rem;
+    }
+
+    .visionLanding{
+        padding-top: .5rem;
+    }
+
+    .vInfoLanding{
+        padding-top: 1rem;
+    }
+
+    .footerLanding{
+        height: 25vh;
+    }
+
+    .pLgFoLanding{
+        margin-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .visionLanding{
+        height: 90vh;
+    }
+}

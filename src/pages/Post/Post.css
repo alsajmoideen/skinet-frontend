@@ -1,0 +1,113 @@
+:root {
+    --inputBg: #fefec7f6;
+    --inputTextColor: #02254C;
+    --blackDim: #0e0e0ed9;
+    --yellowShade: #fbdf2df4;
+    --hoverColor: #daf703f7;
+}
+.containerPost{
+    width: 100%;
+    height: 85.5vh;
+    background-color: #0e0e0ee4;
+}
+.y_d_Color{
+    color: #f3d408f4;
+}
+.y_d_BgColor{
+    background-color: #fef100;
+}
+.lgFontFamPost{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lgPost{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 3.5rem;
+    
+}
+.headingPost{
+
+    text-align: center;
+}
+.postFormSec{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.postInputBar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17.5rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+}
+.postTextarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17.5rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+.postSubmitBtn {
+    position: relative;
+    width: 14.5rem;
+    height: 3.4rem;
+    border-radius: 19px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    color: #02254C;
+    letter-spacing: 1.3px;
+}
+.postSubmitBtn:hover {
+    background-color: #fff535;
+}
+.messageDiv{
+    width: 100%;
+}
+.messagePost{
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fa2727;
+}
+.messagePostGreen{
+    position: relative;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #50ca24;
+}
+@media only screen and (min-width:800px) {
+    .containerPost{
+        height: 120vh;
+    }
+    .headingPost{
+        position: relative;
+        left: 15rem;
+        width: 50%;
+    }
+    .postFormSec{
+        position: relative;
+        margin-top: 2rem;
+        left: 15rem;
+        width: 50%;
+    }
+}

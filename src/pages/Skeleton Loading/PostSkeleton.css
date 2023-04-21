@@ -1,0 +1,68 @@
+.containerPostSkeleton{
+    width: 100%;
+    min-height: 85vh;
+    background-color: #1b1b1bd9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardPostSkeleton{
+    width: 95%;
+    height: 15vh;
+    background-color: #6f6969ee;
+    border-radius: 15px;
+    margin-top: .8rem;
+    border: 4px solid #d8d1d1;
+    animation: postSkeleton 2s linear  infinite ;
+}
+.cardPostSkeleton:nth-child(1){animation-delay: 0.0s;}
+.cardPostSkeleton:nth-child(2){animation-delay: 0.5s;}
+.cardPostSkeleton:nth-child(3){animation-delay: 0.6s;}
+.cardPostSkeleton:nth-child(4){animation-delay: 1.2s;}
+.cardPostSkeleton:nth-child(5){animation-delay: 1s;}
+
+.cardPostSkeleton:last-child{
+    margin-bottom: 1rem;
+}
+.cardHeaderPostSkeleton{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 7vh;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 3px solid #fff;
+    
+}
+.cardBodyPostSkeleton{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    border-radius: 0 0 15px 15px;
+}
+.cardDomainInfo{
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    height: 8vh;
+    border-radius: 0 0 0 15px;
+}
+.cardPaymentInfo{
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 8vh;
+    border-radius: 15px 0 15px 0;
+    border-left: 3px solid #fff;
+}
+.dummieData{
+    width: 60%;
+    height: 4.4vh;
+    background-color: #ded5d5;
+    margin-left: 1rem;
+    margin-top: .7rem;
+    border-radius: 10px;
+}
+@keyframes postSkeleton {
+    0%{opacity: .5;}
+    100%{opacity: 0;}
+}

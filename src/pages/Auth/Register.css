@@ -1,0 +1,14 @@
+@media only screen and (min-width:900px) {
+    .containerLogin{
+        display: flex;
+    }
+    .desktopPart1Register{
+        width: 50%;
+        position: relative;
+        top: 3rem;
+    }
+    .desktopPart1Register> div{
+        position: relative;
+        left: 2.5rem;
+    }
+}

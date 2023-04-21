@@ -1,0 +1,243 @@
+:root {
+    --inputBg: #fefec7f6;
+    --inputTextColor: #02254C;
+    --blackDim: #0e0e0ed9;
+    --yellowShade: #fbdf2df4;
+    --hoverColor: #daf703f7;
+}
+
+.yellowShadeBg {
+    background-color: #f5ff30;
+}
+
+.containerProfile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--blackDim);
+}
+
+.profilePicSec {
+    position: relative;
+    height: 25%;
+}
+
+.profileWelcome {
+    position: absolute;
+    display: none;
+}
+
+.profilePic {
+    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    left: 7.5rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+}
+
+.innerProfileIcon {
+    width: 100%;
+    height: 100%;
+    background-color: #f8e14ef4;
+    border-radius: 28px;
+    border: 5px dashed #02254C;
+}
+
+.changedIcon {
+    width: 100%;
+    height: 100%;
+}
+
+.picInfo {
+    position: absolute;
+    top: 9.5rem;
+    left: 6.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #faedb1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.messageDisplayProfile {
+    text-align: center;
+    color: red;
+    height: 1.8rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 10.5rem;
+}
+
+.editProfile {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    width: 3rem;
+    height: 3rem;
+    opacity: .8;
+    color: #02254C;
+}
+
+.userProfileInput {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+}
+
+.userProfileTextarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 17rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: none;
+    border-color: var(--inputTextColor);
+    color: var(--inputTextColor);
+    outline: transparent;
+    letter-spacing: 1.2px;
+}
+
+.textAreaLimitMsg {
+    font-size: 1.4rem;
+    color: var(--inputBg);
+    margin-bottom: 2rem;
+}
+
+.iconTrigger {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.modalProfile {
+    position: relative;
+    top: -.5rem;
+    width: 22rem;
+    height: 25rem;
+    font-size: 1.2rem;
+    margin-left: .1rem;
+    border-radius: 20px;
+    background-color: #e4e1cefc;
+}
+
+.modalProfile>.header {
+    width: 95%;
+    border-bottom: 1px solid gray;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #02254C;
+    text-align: center;
+    padding: 5px;
+}
+
+.modalProfile>.content {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.iconMargin {
+    margin-right: 1.1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.modalProfile>.actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.modalProfile>.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -.3rem;
+    top: -.3rem;
+    font-size: 24px;
+    background: #f6eb53;
+    border-radius: 18px;
+    border: 1px solid #f0ce4f;
+}
+
+@media only screen and (min-width: 900px) {
+
+    /* For desktop: */
+    .containerProfile {
+        display: flex;
+    }
+
+    .profileWelcome {
+        top: .5rem;
+        left: 2rem;
+        display: block;
+        color: var(--inputBg);
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .picInfo {
+        display: none;
+    }
+
+    .profileYouHg {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--yellowShade);
+        text-decoration: underline;
+    }
+
+    .profilePicSec {
+        width: 50%;
+    }
+
+    .profilePic {
+        top: 9rem;
+        left: 9rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .picInfo {
+        top: 6rem;
+        left: 9rem;
+    }
+
+    .messageDisplayProfile {
+        font-size: 2.2rem;
+        top: 2.5rem;
+        left: -15rem;
+    }
+
+    .editProfile {
+        top: 2rem;
+        left: 3rem;
+        width: 5rem;
+        height: 5rem;
+        opacity: .6;
+    }
+
+    .formSec {
+        margin-top: 1.5rem;
+    }
+}

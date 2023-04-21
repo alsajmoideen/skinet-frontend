@@ -1,0 +1,59 @@
+.containerNavBar{
+    width: 100%;
+    height: 13vh;
+    color: #fff;
+    background-color: #0d0d0df2;
+}
+.logoNavBar{
+    text-align: center;
+    color: #fbdf2df4;
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding-top: .3rem;
+    letter-spacing: 2.5px;
+}
+.iconsNavBar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.iconLinkDiv{
+    position: relative;
+    color: #fff;
+    height: 6vh; 
+    width: 11%;
+}
+.iconLinkDiv.active{
+    color: #f1f11f;
+}
+.linkInNav{
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    text-decoration: none;
+    color: #cccbc3;
+    font-size: .76rem;
+    font-weight: 500;
+}
+.iconStyle{
+   font-size: 1.7rem;
+}
+
+@media only screen and (max-width:390px) {
+    .containerNavBar{
+        height: 15vh;
+    }
+}
+@media only screen and (min-width:900px) {
+    .containerNavBar{
+        display: flex;
+    }
+    .logoNavBar{
+        width: 30%;
+    }
+    .iconsNavBar{
+        display: flex;
+        align-items: center;
+        width: 70%;
+    }
+}
